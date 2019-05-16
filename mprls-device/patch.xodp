@@ -1,0 +1,25 @@
+{
+  "description": "Creates an MPRLS device.",
+  "nodes": [
+    {
+      "id": "BkjCkyqhV",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An MPRLS device.",
+      "id": "By4Rzb52N",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    }
+  ]
+}

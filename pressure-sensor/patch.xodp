@@ -1,0 +1,335 @@
+{
+  "description": "Combines lower level nodes to create a ready to use sensor.",
+  "links": [
+    {
+      "id": "BkJuzGcnN",
+      "input": {
+        "nodeId": "HJ8IMMq3V",
+        "pinKey": "Bkh8A_Sv1-"
+      },
+      "output": {
+        "nodeId": "S1fPyG5hN",
+        "pinKey": "B1vBcZ9h4"
+      }
+    },
+    {
+      "id": "HJnMpzc3N",
+      "input": {
+        "nodeId": "BJqgMGqhV",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rJyfpz5n4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hk-sgMchN",
+      "input": {
+        "nodeId": "Hkv9xG53N",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1Zs1zc34",
+        "pinKey": "Skskhb5nV"
+      }
+    },
+    {
+      "id": "S1-ueMq2V",
+      "input": {
+        "nodeId": "Sy-8gf52V",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1Zs1zc34",
+        "pinKey": "SkkaoW92N"
+      }
+    },
+    {
+      "id": "S19bmz924",
+      "input": {
+        "nodeId": "HkmFMz5h4",
+        "pinKey": "SJ-1mZPTz"
+      },
+      "output": {
+        "nodeId": "BJFuWM9nV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1zofMq3V",
+      "input": {
+        "nodeId": "H1_cMG53V",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJomJMqhV",
+        "pinKey": "By4Rzb52N"
+      }
+    },
+    {
+      "id": "SJKvmM92E",
+      "input": {
+        "nodeId": "HkmFMz5h4",
+        "pinKey": "B1P1nFwaM"
+      },
+      "output": {
+        "nodeId": "rJjU7fcn4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkWJXM5hV",
+      "input": {
+        "nodeId": "B1Zs1zc34",
+        "pinKey": "SJwSs-c2E"
+      },
+      "output": {
+        "nodeId": "BJaRMz9hV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyG8XGcnN",
+      "input": {
+        "nodeId": "rJSrmMqnN",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ8IMMq3V",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "SyMdgz92N",
+      "input": {
+        "nodeId": "rJIPlMqhE",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1Zs1zc34",
+        "pinKey": "BJnAsbq3N"
+      }
+    },
+    {
+      "id": "SylX7z5nV",
+      "input": {
+        "nodeId": "B1Zs1zc34",
+        "pinKey": "SkJhoZcn4"
+      },
+      "output": {
+        "nodeId": "HkmFMz5h4",
+        "pinKey": "OkPg7GDaW"
+      }
+    },
+    {
+      "id": "SyowWzq3V",
+      "input": {
+        "nodeId": "S1fPyG5hN",
+        "pinKey": "H1wEcb93E"
+      },
+      "output": {
+        "nodeId": "S1c8Wzc2V",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyrbTM93N",
+      "input": {
+        "nodeId": "BJslaGc3E",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1fPyG5hN",
+        "pinKey": "BkbUqZcn4"
+      }
+    },
+    {
+      "id": "rJ3F7MqnE",
+      "input": {
+        "nodeId": "S1fPyG5hN",
+        "pinKey": "ByyXq-chE"
+      },
+      "output": {
+        "nodeId": "HJomJMqhV",
+        "pinKey": "By4Rzb52N"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1Zs1zc34",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -6
+      },
+      "type": "@/read-pressure"
+    },
+    {
+      "description": "Update. Triggers reading.",
+      "id": "BJFuWM9nV",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": -8
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "BJaRMz9hV",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -7
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "description": "Pulses if device fails to initialize.",
+      "id": "BJqgMGqhV",
+      "label": "ERR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "BJslaGc3E",
+      "label": "ERR",
+      "position": {
+        "units": "slots",
+        "x": -4,
+        "y": -6
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "H1_cMG53V",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -7
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HJ8IMMq3V",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -6
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "id": "HJomJMqhV",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -8
+      },
+      "type": "@/mprls-device"
+    },
+    {
+      "id": "HkmFMz5h4",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": -7
+      },
+      "type": "xod/core/gate"
+    },
+    {
+      "description": "Pulses after each read of sensor.",
+      "id": "Hkv9xG53N",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Initializes MPRLS device.",
+      "id": "S1c8Wzc2V",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": -5,
+        "y": -8
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "S1fPyG5hN",
+      "position": {
+        "units": "slots",
+        "x": -6,
+        "y": -7
+      },
+      "type": "@/init"
+    },
+    {
+      "description": "Pressure in hectopascals.",
+      "id": "Sy-8gf52V",
+      "label": "hPa",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -5
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pressure in pounds per square inch.",
+      "id": "rJIPlMqhE",
+      "label": "PSI",
+      "position": {
+        "units": "slots",
+        "x": -1,
+        "y": -5
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "rJSrmMqnN",
+      "label": "INITD",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": -5
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "rJjU7fcn4",
+      "label": "INITD",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -8
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "rJyfpz5n4",
+      "label": "ERR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -6
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
+}

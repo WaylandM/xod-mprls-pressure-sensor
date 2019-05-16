@@ -1,0 +1,61 @@
+{
+  "description": "Initializes MPRLS device.",
+  "nodes": [
+    {
+      "description": "Pulse if initialization successful.",
+      "id": "B1vBcZ9h4",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse if initialization failed.",
+      "id": "BkbUqZcn4",
+      "label": "ERR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "ByOWcZqnE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An MPRLS device.",
+      "id": "ByyXq-chE",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-mprls-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Trigger for initialization. Default is to initialize on boot.",
+      "id": "H1wEcb93E",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

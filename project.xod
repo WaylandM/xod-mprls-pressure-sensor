@@ -1,0 +1,6 @@
+{
+  "description": "Micropressure sensor. Arduino library for the Adafruit_MPRLS micropressure sensor.  Wraps a modified version of: https://github.com/adafruit/Adafruit_MPRLS",
+  "license": "MIT",
+  "name": "mprls-pressure-sensor",
+  "version": "0.0.2"
+}

@@ -1,0 +1,131 @@
+{
+  "description": "Test of sensor.",
+  "links": [
+    {
+      "id": "ByGA6Gc24",
+      "input": {
+        "nodeId": "SJjTpG92V",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B1gFTz5nE",
+        "pinKey": "rJIPlMqhE"
+      }
+    },
+    {
+      "id": "Sk3tazq34",
+      "input": {
+        "nodeId": "B1gFTz5nE",
+        "pinKey": "BJFuWM9nV"
+      },
+      "output": {
+        "nodeId": "SywYpfc3V",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "rJGy0f5hN",
+      "input": {
+        "nodeId": "H1HRaMqnN",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "B1gFTz5nE",
+        "pinKey": "Hkv9xG53N"
+      }
+    },
+    {
+      "id": "rJTn6zqnV",
+      "input": {
+        "nodeId": "HyD2af5nV",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B1gFTz5nE",
+        "pinKey": "Sy-8gf52V"
+      }
+    },
+    {
+      "id": "ry9lRz92E",
+      "input": {
+        "nodeId": "rkDJCf92N",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "H1HRaMqnN",
+        "pinKey": "r1yhZRd8W"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1gFTz5nE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/pressure-sensor"
+    },
+    {
+      "id": "H1HRaMqnN",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "HyD2af5nV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJjTpG92V",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SywYpfc3V",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "rkDJCf92N",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}
